@@ -1,0 +1,35 @@
+
+$color1:#d1cebd;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {width: auto!important; overflow-x: hidden!important}
+
+body{
+    background-color: $color1
+}
+
+@import "./pages/contact/Contact";
+@import "./pages/home/Home";
+@import "./pages/menu/Menu";
+@import "./pages/reservation/Reservation";
+
+@import "./pages/submenu/desserts/Desserts";
+@import "./pages/submenu/drinks/Drinks";
+@import "./pages/submenu/pasta/Pasta";
+@import "./pages/submenu/pizzas/Pizzas";
+@import "./pages/submenu/salads/Salads";
+@import "./pages/submenu/starters/Starters";
+
+@import "./components/footer/Footer";
+@import "./components/navbar/Navbar";
+@import "./components/dessert/Dessert";
+@import "./components/drink/Drink";
+@import "./components/pasta/Pasta";
+@import "./components/pizza/Pizza";
+@import "./components/salad/Salad";
+@import "./components/starter/Starter";
+
