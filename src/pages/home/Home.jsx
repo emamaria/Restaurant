@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <>
+    <div class="home_container">
       <section class="par1">
       <div class="par_text">
         <h1 class="title">Delizioso</h1>
@@ -21,7 +21,7 @@ const Home = () => {
         <button>Reserva</button>
       </div>
     </section>
-    </>
+    </div>
   )
 }
 

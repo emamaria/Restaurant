@@ -6,17 +6,29 @@ $color1:#d1cebd;
     box-sizing: border-box;
 }
 
+
+
+.App{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 body, html{
-    height: 100%;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    line-height: 1.2em;
-    color: black;
-    width: auto!important; 
-    overflow-x: hidden!important
+
+
+min-height: 100%;
+ font-size: 16px;
+font-family: "Lato", sans-serif;
+line-height: 1.2em;
+color: black;
+width: auto!important; 
+overflow-x: hidden!important
    
 }
+
+
+
+
 
 
 
@@ -40,4 +52,6 @@ body, html{
 @import "./components/pizza/Pizza";
 @import "./components/salad/Salad";
 @import "./components/starter/Starter";
+@import "./components/restaurant/Restaurant";
+
 

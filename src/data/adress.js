@@ -2,19 +2,19 @@ export const adress = [
 
     {
      name: "Atocha",
-     adress: "c/Atocha x 28012",
-     tel: "+3491000000x",
+     adress: "C/Atocha 1 28012",
+     tel: "+34910000000",
     },
     {
     name: "Callao",
-     adress: "c/Callao x 28013",
-     tel: "+349111111x",
+     adress: "C/Callao 2 28013",
+     tel: "+3491111111",
     
     },
     {
     name: "Gran Vía",
-     adress: "c/Gran Vía x 28013",
-     tel: "+349222222x",
+     adress: "C/Gran Vía 3 28013",
+     tel: "+3492222222",
     }
     
     ]
