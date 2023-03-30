@@ -1,0 +1,95 @@
+
+
+
+.par1{
+    background-image: url('../../../public/assets/img/pizzas.jpg');
+    min-height: 100vh;
+}
+
+.par2{
+    background-image: url('../../../public/assets/img/pasta.jpg');
+    min-height: 600px;
+}
+
+.par3{
+    background-image: url('../../../public/assets/img/pizza.jpg');
+    min-height: 600px;
+}
+
+.par1, .par2, .par3{
+   display: flex;
+   justify-content: center;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+section{
+    color: white;
+}
+
+.par_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    align-items: center;
+    
+    
+
+}
+
+
+.title{
+
+    font-size: 3rem;
+    color: white;
+    padding: 20px;  
+}
+
+.sub_title{
+    font-size: 1rem;
+    color: white;
+}
+
+.menu, .reservation{
+    margin-bottom: 30px;
+}
+
+button{
+    background-color:  #282e34;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    width: fit-content;
+}
+
+
+@media(max-width: 600px){
+    // .par1, .par2, .par3{
+    //     background-attachment: scroll;
+    // }
+    
+    .par_text{
+        font-size: 1rem;
+
+        .title{
+            font-size: 1.5rem;
+        }
+
+        .sub_title{
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+    }
+
+   
+}
