@@ -2,22 +2,22 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div class="home_container">
-      <section class="par1">
-      <div class="par_text">
-        <h1 class="title">Delizioso</h1>
-        <h2 class="sub_title">Restaurante Italiano</h2>
+    <div className="home_container">
+      <section className="par1">
+      <div className="par_text">
+        <h1 className="title">Delizioso</h1>
+        <h2 className="sub_title">Restaurante Italiano</h2>
       </div>
     </section>
-    <section class="par2">
-      <div class="par_text">
-        <p class="menu">Nuestra carta</p>
+    <section className="par2">
+      <div className="par_text">
+        <p className="menu">Nuestra carta</p>
         <button>Carta</button>
       </div>
     </section>
-    <section class="par3">
-      <div class="par_text">
-        <p class="reservation">Haz tu reseva</p>
+    <section className="par3">
+      <div className="par_text">
+        <p className="reservation">Haz tu reseva</p>
         <button>Reserva</button>
       </div>
     </section>
