@@ -52,11 +52,13 @@ export const FoodDetails = () => {
 console.log(foodArray)
    
   return (
-    <main>
+    <main className="foods_container">
         <h3>{submenu}</h3>
+        <div className="foodDetails_container">
        { foodArray.map((food, index) => <FoodDetail
         name={food.name} img={food.img} key={index} description={food.description} price={food.price}
        />)}
+       </div>
     </main>
   )
 }

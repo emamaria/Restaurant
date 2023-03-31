@@ -1,6 +1,8 @@
 .foodDetail_container{
     display: flex;
     color: black;
+    margin: 20px;
+    
     img{
         width: 300px;
     }
@@ -8,6 +10,12 @@
 }
 
 .foodData_container{
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 500px;
+    h2, p{
+        margin-bottom: 10px;
+    }
+
 }

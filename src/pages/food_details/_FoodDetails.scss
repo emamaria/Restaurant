@@ -1,0 +1,18 @@
+.foods_container{
+    display: flex;
+    margin-top: 100px;
+  
+   
+    align-items: center;
+   flex-direction: column;
+   h3{
+    font-size: 3rem;
+    padding: 50px;
+   }
+}
+
+.foodDetails_container{
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
