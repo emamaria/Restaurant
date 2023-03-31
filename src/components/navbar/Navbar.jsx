@@ -1,5 +1,6 @@
 import React from 'react'
 import {useEffect, useState} from 'react';
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -43,10 +44,25 @@ const [menuStatus, setMenuStatus] = useState(false)
       </button>
       <nav className={menuClass}>
         <ul className="nav_menu_ul">
-          <li className="nav_menu_list">Inicio</li>
-          <li className="nav_menu_list">Carta</li>
-          <li className="nav_menu_list">Reservar</li>
-          <li className="nav_menu_list">Contacto</li>
+          <li className="nav_menu_list">
+          <NavLink to="/"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+         Inicio
+        </NavLink></li>
+          <li className="nav_menu_list">
+          <NavLink to="/menu"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+         Carta
+        </NavLink>
+          </li>
+          <li className="nav_menu_list">
+          <NavLink to="/reservation"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+         Reservar
+        </NavLink>
+          </li>
+          <li className="nav_menu_list">
+          <NavLink to="/contact"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+         Contacto
+        </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

@@ -1,6 +1,18 @@
 import React from 'react'
-
+import {useNavigate} from 'react-router-dom'
 const Home = () => {
+
+  const navigate = useNavigate();
+
+   const changeRoute = (routeName) => {
+    if(routeName === "carta"){
+      navigate("/menu")
+    }
+
+    if(routeName === "reserva"){
+      navigate("/reservation")
+    }
+   }
   return (
     <div className="home_container">
       <section className="par1">
@@ -12,13 +24,13 @@ const Home = () => {
     <section className="par2">
       <div className="par_text">
         <p className="menu">Nuestra carta</p>
-        <button>Carta</button>
+        <button onClick={() => changeRoute("carta")}>Carta</button>
       </div>
     </section>
     <section className="par3">
       <div className="par_text">
         <p className="reservation">Haz tu reseva</p>
-        <button>Reserva</button>
+        <button onClick={() => changeRoute("reserva")}>Reserva</button>
       </div>
     </section>
     </div>
