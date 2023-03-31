@@ -63,16 +63,19 @@ section{
 
 .menu, .reservation{
     margin-bottom: 30px;
+    
 }
 
 button{
     background-color:  #282e34;
+    opacity: 0.8;
     border-radius: 5px;
     color: white;
     padding: 10px;
     font-size: 1.3rem;
     border: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 
