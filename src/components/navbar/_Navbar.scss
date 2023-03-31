@@ -5,10 +5,81 @@
     z-index: 1;
     background-color: white;
     opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+   
+    
     
 }
 
-.scrolled_nav{
+
+.scrolled_header{
     background-color: white;
     opacity: 0.95;
+}
+
+.header_title{
+ color: #cbbeb5;
+ font-size: 2rem;
+ font-family: oblique;
+ padding: 1.5rem;
+}
+
+
+.hamburger_button{
+    background-color: white;
+    color: #cbbeb5;
+    display: none;
+}
+
+.nav_menu_list{
+    list-style-type: none;
+    margin: 0 0.5rem;
+    color: #cbbeb5;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    
+}
+
+.nav_menu_ul{
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+   
+   
+}
+@media(max-width:600px){
+
+    .hamburger_button{
+        display: block;
+        cursor: pointer;
+    }
+    nav{
+        width: 100%;
+        // no mostrar menu
+        display: none;
+      
+       
+    }
+
+    //al colocar esta clase en nav aparece el nav
+    .show_nav{
+        display: block;
+        
+    }
+
+    .nav_menu_ul{
+        background-color: white;
+        // opacity: 0.9;
+       
+       flex-direction: column;
+    }
+
+
+    .nav_menu_list{
+       padding: 1rem 0; 
+
+    }
 }
