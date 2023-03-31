@@ -36,6 +36,7 @@ overflow-x: hidden!important
 @import "./pages/home/Home";
 @import "./pages/menu/Menu";
 @import "./pages/reservation/Reservation";
+@import "./pages/food_details/FoodDetails";
 
 @import "./pages/submenu/desserts/Desserts";
 @import "./pages/submenu/drinks/Drinks";
@@ -54,5 +55,6 @@ overflow-x: hidden!important
 @import "./components/starter/Starter";
 @import "./components/restaurant/Restaurant";
 @import "./components/carta/Carta";
+@import "./components/food_detail/FoodDetail";
 
 

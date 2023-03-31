@@ -1,0 +1,13 @@
+.foodDetail_container{
+    display: flex;
+    color: black;
+    img{
+        width: 300px;
+    }
+    
+}
+
+.foodData_container{
+    display: flex;
+    flex-direction: column;
+}

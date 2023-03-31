@@ -16,7 +16,7 @@ export const drinks = [
     },
     {
     name: "Vino",
-    descrition: "Vino tinto sin alcohol",
+    description: "Vino tinto sin alcohol",
     price: "3.5€",
     img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938879/italian/vino_u46gzc.jpg"
     
