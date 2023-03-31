@@ -14,6 +14,7 @@ import { Starters } from '../../pages/submenu/starters/Starters'
 
 const MainRoutes = () => {
   return (
+    
    <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/menu" element={<Menu/>}/>
@@ -28,6 +29,7 @@ const MainRoutes = () => {
     <Route path="/reservation" element={<Reservation/>}/>
     <Route path="/*" element={<Navigate to="/"/>}/>
    </Routes>
+   
   )
 }
 

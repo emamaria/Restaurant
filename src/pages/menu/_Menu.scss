@@ -1,0 +1,33 @@
+.fullMenu_container{
+    background-image: url("../../../public/assets/img/escarcha.jpg");
+    text-align: center;
+     min-height: 100vh;
+     padding: 150px 0 100px 0;
+  
+    section{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       
+    }
+    
+}
+
+.carta_title{
+     font-size: 2rem;
+    padding: 20px 0 30px 0;
+    color: white;
+    letter-spacing: 1.2rem;
+}
+
+@media(max-width: 600px){
+    .carta_title{
+        font-size: 2rem;
+        line-height: 2rem;
+       padding: 20px 0 30px 0;
+       color: white;
+       
+   } 
+}

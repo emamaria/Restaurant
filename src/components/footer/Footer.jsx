@@ -1,5 +1,5 @@
 import React from 'react'
-import { adress } from '../../data/adress'
+import { adress } from '../../data/adress/adress.js'
 import { Restaurant } from '../restaurant/Restaurant'
 
 const Footer = () => {
