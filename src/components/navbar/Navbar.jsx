@@ -16,7 +16,7 @@ const [menuStatus, setMenuStatus] = useState(false)
 
   useEffect(() => {
     const handleScroll = event => {
-    (window.scrollY > 70)?setScrollStyle('scrolled_header'):setScrollStyle('')
+    (window.scrollY > 60)?setScrollStyle('scrolled_header'):setScrollStyle('')
     
     };
 

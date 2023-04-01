@@ -24,6 +24,14 @@
     
 }
 
+.menuToChoose_container{
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+
 @media(max-width:600px){
     .foods_container{
         justify-content: center;
