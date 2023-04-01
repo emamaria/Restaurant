@@ -27,8 +27,8 @@ const MainRoutes = () => {
     <Route path="/menu/desserts" element={<Desserts/>}/>
     <Route path="/menu/drinks" element={<Drinks/>}/> */}
     <Route path="/menu/*" element={<Navigate to="/menu"/>}/>
-    <Route path="/contact" element={<Contanct/>}/>
-    <Route path="/reservation" element={<Reservation/>}/>
+    <Route path="/contacto" element={<Contanct/>}/>
+    <Route path="/reservas" element={<Reservation/>}/>
     <Route path="/*" element={<Navigate to="/"/>}/>
    </Routes>
    

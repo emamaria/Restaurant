@@ -8,14 +8,14 @@ export const desserts = [
     },
     {
     name: "Panna cotta",
-    description: "postre elaborado con nata, gelatina con salsa de cacao y nueces.",
+    description: "Postre elaborado con nata, gelatina con salsa de cacao y nueces.",
     price: "4€",
     img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938841/italian/panna_cotta_krcg04.jpg"
     
     },
     {
-    name: "helados 3 sabores",
-    description: "helado artesanal de vainilla, chocolate y nata con sirope de fresa y cereza.",
+    name: "Helados 3 sabores",
+    description: "Helado artesanal de vainilla, chocolate y nata con sirope de fresa y cereza.",
     price: "4€",
     img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938829/italian/helados_ah5jmb.jpg"
     

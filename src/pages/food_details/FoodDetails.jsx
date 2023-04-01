@@ -14,29 +14,30 @@ export const FoodDetails = () => {
 
     const [foodArray, setFoodArray]  = useState([])
 
-    const {submenu} = useParams()
+    let {submenu} = useParams()
+
 
 
     useEffect(() => {
        
 
         switch(submenu){
-          case "drinks": 
+          case "bebidas": 
           setFoodArray([...drinks]);
           break;
-          case "salads": 
+          case "ensaladas": 
           setFoodArray([...salads]);
           break; 
-          case "starters": 
+          case "entrantes": 
           setFoodArray([...starters]);
           break;
-          case "pasta": 
+          case "pastas": 
           setFoodArray([...pasta]);
           break;
           case "pizzas": 
           setFoodArray([...pizzas]);
           break;
-          case "desserts": 
+          case "postres": 
           setFoodArray([...desserts]);
           break;
           default:
@@ -53,7 +54,7 @@ console.log(foodArray)
    
   return (
     <main className="foods_container">
-        <h3>{submenu}</h3>
+        <h3>{ `${submenu[0].toUpperCase()}${submenu.substring(1)}`}</h3>
         <div className="foodDetails_container">
        { foodArray.map((food, index) => <FoodDetail
         name={food.name} img={food.img} key={index} description={food.description} price={food.price}

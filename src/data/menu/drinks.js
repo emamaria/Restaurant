@@ -1,15 +1,15 @@
 export const drinks = [
 
     {
-    name: "zumo de naranja",
-    description: "zumo de naranja recién esprimido.",
+    name: "Zumo de naranja",
+    description: "Zumo de naranja recién esprimido.",
     price: "2€",
     img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938883/italian/zumo_naranja_ft6bbe.jpg"
     
     },
     {
     name: "Cerveza",
-    description: "cerveza sin alcohol",
+    description: "Cerveza sin alcohol",
     price: "1.5€",
     img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938739/italian/cerveza_jqkqop.jpg"
     

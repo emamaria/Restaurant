@@ -2,13 +2,13 @@ export const pizzas = [
 
     {
     name: "Pizza pepperoni",
-    description: "pizza con pepperoni, aceitunas negras, champiñón, pimiento verde, aceitunas negras, mozarella y salsa de tomate fresca.",
+    description: "Pizza con pepperoni, aceitunas negras, champiñón, pimiento verde, aceitunas negras, mozarella y salsa de tomate fresca.",
     price: "12€",
     img:  "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938872/italian/pizza-pepperoni_m7uiw3.jpg"
     },
     {
     name: "Pizza di mare",
-    description: "pizza con gambas, aceitunas negras, rúcula, alcaparras, mozarella, aceite de oliva y salsa especial de la casa.",
+    description: "Pizza con gambas, aceitunas negras, rúcula, alcaparras, mozarella, aceite de oliva y salsa especial de la casa.",
     price: "14€",
     img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938861/italian/pizza_di_mare_praocd.jpg"
     },

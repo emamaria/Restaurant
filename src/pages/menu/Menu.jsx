@@ -9,7 +9,7 @@ const Menu = () => {
     <main className="fullMenu_container">
      <h2 className="carta_title">Nuestra Carta</h2> 
      <section>
-      {fullMenu.map((menu, index) =>  <Carta key={index} name={menu.name} img={menu.img} pathName={menu.pathName}/>)}
+      {fullMenu.map((menu, index) =>  <Carta key={index} name={menu.name} img={menu.img} />)}
      </section>
     </main>
   )

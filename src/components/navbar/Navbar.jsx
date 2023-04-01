@@ -54,12 +54,12 @@ const [menuStatus, setMenuStatus] = useState(false)
         </NavLink>
           </li>
           <li className="nav_menu_list">
-          <NavLink to="/reservation"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+          <NavLink to="/reservas"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
          Reservar
         </NavLink>
           </li>
           <li className="nav_menu_list">
-          <NavLink to="/contact"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+          <NavLink to="/contacto"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
          Contacto
         </NavLink>
           </li>

@@ -10,7 +10,7 @@ const Home = () => {
     }
 
     if(routeName === "reserva"){
-      navigate("/reservation")
+      navigate("/reservas")
     }
    }
   return (
