@@ -1,0 +1,36 @@
+.reservation_place_container{
+    padding: 30px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    color: #c17b00;
+     border-radius: 10px;
+     background-color: white;
+     margin: 10px;
+}
+
+.adress_time_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+.reservation_access_button{
+  border-radius: 10px;  
+  background-color: #dfb976;
+}
+
+.reservation_adress_container, .openTime_container{
+    padding: 20px;
+}
+
+@media(max-width: 600px){
+
+    .adress_time_container{
+        flex-direction: column;
+    }
+    
+}
