@@ -70,6 +70,7 @@ console.log(foodArray)
         name={food.name} img={food.img} key={index} description={food.description} price={food.price}
        />)}
        </div>
+       <h3>Otros Platos</h3>
        <div className="menuToChoose_container">
         { restOfMenu.map((menu, index) => <Submenu key={index} name={menu.name} img={menu.img}/> )}
        </div>
