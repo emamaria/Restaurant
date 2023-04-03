@@ -14,6 +14,13 @@ const [menuStatus, setMenuStatus] = useState(false)
 
   const menuClass = `nav_menu ${showMenu}`
 
+  const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+};
+
   useEffect(() => {
     const handleScroll = event => {
     (window.scrollY > 60)?setScrollStyle('scrolled_header'):setScrollStyle('')
@@ -45,21 +52,21 @@ const [menuStatus, setMenuStatus] = useState(false)
       <nav className={menuClass}>
         <ul className="nav_menu_ul">
           <li className="nav_menu_list">
-          <NavLink to="/"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })}>
+          <NavLink to="/"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })} onClick={goToTop}>
          Inicio
         </NavLink></li>
           <li className="nav_menu_list">
-          <NavLink to="/menu"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })}>
+          <NavLink to="/menu"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })} onClick={goToTop}>
          Carta
         </NavLink>
           </li>
           <li className="nav_menu_list">
-          <NavLink to="/reservas"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })}>
+          <NavLink to="/reservas"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })} onClick={goToTop}>
          Reservar
         </NavLink>
           </li>
           <li className="nav_menu_list">
-          <NavLink to="/contacto"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })}>
+          <NavLink to="/contacto"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })} onClick={goToTop}>
          Contacto
         </NavLink>
           </li>

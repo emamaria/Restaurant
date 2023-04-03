@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
+
 export const Submenu = ({name, img}) => {
+ 
 
  let imageStyle = {
     backgroundImage: `url(${img})`,
@@ -27,7 +29,7 @@ export const Submenu = ({name, img}) => {
   return (
     <section className="submenu_container">
     <Link to={`/menu/${name.toLowerCase()}`} onClick={goToTop}>
-    <div style={imageStyle} > 
+    <div style={imageStyle}> 
     Ver {name[0] + name.substring(1)} 
     </div>
     </Link>
