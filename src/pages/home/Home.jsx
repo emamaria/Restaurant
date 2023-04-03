@@ -4,14 +4,25 @@ const Home = () => {
 
   const navigate = useNavigate();
 
+  const goToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+};
+
    const changeRoute = (routeName) => {
     if(routeName === "carta"){
       navigate("/menu")
+      goToTop()
     }
 
     if(routeName === "reserva"){
       navigate("/reservas")
+      goToTop()
     }
+
+  
    }
   return (
     <div className="home_container">
@@ -24,7 +35,7 @@ const Home = () => {
     <section className="par2">
       <div className="par_text">
         <p className="menu">Nuestra carta</p>
-        <button onClick={() => changeRoute("carta")}>Carta</button>
+        <button onClick={() => changeRoute("carta")} >Carta</button>
       </div>
     </section>
     <section className="par3">

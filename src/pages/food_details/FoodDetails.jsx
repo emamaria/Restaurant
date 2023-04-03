@@ -10,6 +10,7 @@ import { FoodDetail } from '../../components/food_detail/FoodDetail';
 import { fullMenu } from '../../data/menu/full_menu.js';
 import { Submenu } from '../../components/submenu/Submenu.jsx';
 
+
 //debo tomar el path dinamico de la ruta que accedo y segun tomo el dato
 //de ese plato que necesito 
 export const FoodDetails = () => {
@@ -58,6 +59,8 @@ export const FoodDetails = () => {
     }, [submenu]);
 
 console.log(foodArray)
+
+
    
   return (
     <main className="foods_container">

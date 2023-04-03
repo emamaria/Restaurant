@@ -17,9 +17,16 @@ export const Submenu = ({name, img}) => {
     margin: "5px",
     borderRadius: "15px"
  }
+
+ const goToTop = () => {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+  });
+};
   return (
     <section className="submenu_container">
-    <Link to={`/menu/${name.toLowerCase()}`}>
+    <Link to={`/menu/${name.toLowerCase()}`} onClick={goToTop}>
     <div style={imageStyle} > 
     Ver {name[0] + name.substring(1)} 
     </div>
