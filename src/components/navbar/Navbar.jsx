@@ -45,21 +45,21 @@ const [menuStatus, setMenuStatus] = useState(false)
       <nav className={menuClass}>
         <ul className="nav_menu_ul">
           <li className="nav_menu_list">
-          <NavLink to="/"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+          <NavLink to="/"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })}>
          Inicio
         </NavLink></li>
           <li className="nav_menu_list">
-          <NavLink to="/menu"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+          <NavLink to="/menu"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })}>
          Carta
         </NavLink>
           </li>
           <li className="nav_menu_list">
-          <NavLink to="/reservas"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+          <NavLink to="/reservas"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })}>
          Reservar
         </NavLink>
           </li>
           <li className="nav_menu_list">
-          <NavLink to="/contacto"style={({ isActive }) => ({ color: isActive ? "gray" : "#cbbeb5" })}>
+          <NavLink to="/contacto"style={({ isActive }) => ({ color: isActive ? "#191919" : "#c17b00" })}>
          Contacto
         </NavLink>
           </li>

@@ -3,6 +3,7 @@
     width: 100%;
     position: fixed;
     z-index: 1;
+  
     background-color: white;
     opacity: 0.5;
     display: flex;
@@ -21,7 +22,7 @@
 }
 
 .header_title{
- color: #cbbeb5;
+ color: #c17b00;
  font-size: 2rem;
  font-family: oblique;
  padding: 1.5rem;
@@ -43,6 +44,7 @@
     cursor: pointer;
     a{
         text-decoration: none;
+        
     }
 }
 
