@@ -5,6 +5,7 @@ import Home from '../../pages/home/Home'
 import Menu from '../../pages/menu/Menu'
 import Reservation from '../../pages/reservation/Reservation'
 import { FoodDetails } from '../../pages/food_details/FoodDetails'
+import { ReservationFormPage } from '../../pages/reservation_form_page/ReservationFormPage'
 
 
 const MainRoutes = () => {
@@ -17,6 +18,7 @@ const MainRoutes = () => {
     <Route path="/menu/*" element={<Navigate to="/menu"/>}/>
     <Route path="/contacto" element={<Contanct/>}/>
     <Route path="/reservas" element={<Reservation/>}/>
+    <Route path="/reservas/:sitio" element={<ReservationFormPage/>}/>
     <Route path="/*" element={<Navigate to="/"/>}/>
    </Routes>
    

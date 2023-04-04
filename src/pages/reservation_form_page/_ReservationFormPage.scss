@@ -1,0 +1,20 @@
+.reservation_form_container{
+    min-height: 100vh;
+    background-image: url("../../../public/assets/img/escarcha.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.reservation_form__title{
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 20px 0 30px 0;
+    color: white;
+    letter-spacing: 1.2rem;
+    text-align: center;
+}
