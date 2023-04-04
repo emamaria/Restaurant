@@ -1,20 +1,87 @@
 .reservation_form_container{
+    color: #c17b00;
     min-height: 100vh;
     background-image: url("../../../public/assets/img/escarcha.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 150px 0 100px 0;
+    padding: 70px 0 100px 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+   
+    
 }
+
 
 
 
 .reservation_form__title{
     font-size: 2rem;
     line-height: 2rem;
-    padding: 20px 0 30px 0;
+    padding: 70px 0 70px 0;
     color: white;
     letter-spacing: 1.2rem;
     text-align: center;
+}
+
+.form_title{
+    text-align: center;
+}
+.reservation_form{
+    // height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    
+}
+
+fieldset{
+    border: none;
+}
+
+.first_fieldset{
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+   
+}
+.second_fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+}
+
+
+
+
+.reservation_button{
+    border-radius: 10px;  
+    background-color: #dfb976;
+     margin: auto;
+     
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+
+
+.section_space{
+    padding: 20px;
+}
+
+@media(max-width: 600px){
+
+    .reservation_form{
+        width: 260px;
+    }
+    
 }
