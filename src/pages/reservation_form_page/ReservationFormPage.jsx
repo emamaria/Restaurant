@@ -48,11 +48,12 @@ export const ReservationFormPage = () => {
     
       e.preventDefault()
       setForm(initialValue)
-      setOkSubmit(true)
+        setOkSubmit(true)
+       
        console.log(okSubmit)
        setTimeout(() => {
         setOkSubmit(false)
-       }, 5000);
+       }, 9000);
        console.log(time)
     }
 
