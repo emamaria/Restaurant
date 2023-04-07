@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Contanct = () => {
 
+  const [checkState, setCheckState] = useState(false)
+
   const [okSubmit, setOkSubmit] = useState(false)
 
 const initialValue = {
@@ -12,7 +14,8 @@ const initialValue = {
   email: "",
   telephone: "",
   message: "",
-  checked: ""
+  
+ 
 }
 
   const [contactForm, setContactForm] = useState(initialValue);
@@ -23,23 +26,28 @@ const initialValue = {
     const {value, name } = e.target
     
     setContactForm({...contactForm,[name]:value})
+
+    console.log(name, value)
   }
 
-  const {name, email, checked, message, telephone} = contactForm;
+  const {name, email, message, telephone} = contactForm;
+
+
   
   const formSubmit = (e) => {
     e.preventDefault()
     setContactForm(initialValue)
 
     setOkSubmit(true)
-       
+   
+    setCheckState(!checkState)
        
     console.log(okSubmit)
     setTimeout(() => {
      setOkSubmit(false)
     }, 5000);
   }
-  
+ 
   return (
     <main className="contact_container">
       <h2 className="contact_title">Contacto</h2>
@@ -56,8 +64,8 @@ const initialValue = {
          <textarea  rows="4"   required type="text" value={message} name="message" id="message" onChange={handleChange}>
           </textarea>
            <div className='checkbox_container'>
-         <input required type="checkbox" id="check" onChange={handleChange}/>
-         <label htmlFor="check" value={checked} onChange={handleChange}>He leído y acepto la <Link>politica de proteccion de datos</Link></label>
+         <input required name="policy" checked={checkState}  type="checkbox" id="check" onChange={()=> { setCheckState(!checkState)}}/>
+         <label htmlFor="check"  onChange={handleChange}>He leído y acepto la <Link>politica de proteccion de datos</Link></label>
          </div>
 
          <span className={(okSubmit === false)?"no_submit":"ok_submit"}>Nos pondremos en contacto lo antes posible.</span>
