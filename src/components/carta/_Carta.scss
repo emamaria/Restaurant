@@ -12,6 +12,10 @@
         height: 30vh;
         border: 2px white solid;
     }
+
+    img:hover{
+        opacity: 0.7;
+    }
 }
 
 @media(max-width: 600px){

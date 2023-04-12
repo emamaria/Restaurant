@@ -17,7 +17,8 @@ export const Submenu = ({name, img}) => {
     alignItems: "center",
     cursor: "pointer",
     margin: "5px",
-    borderRadius: "15px"
+    borderRadius: "15px",
+  
  }
 
  const goToTop = () => {
