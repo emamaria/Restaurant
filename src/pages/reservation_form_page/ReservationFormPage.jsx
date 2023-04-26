@@ -8,11 +8,12 @@ import { useState } from 'react';
 export const ReservationFormPage = () => {
 
     const [okSubmit, setOkSubmit] = useState(false)
+    
    let reservationTime = ["13:15","13:30","13:45","13:50","14:05","14:20","14:35","14:50","19:15",
     "19:30","19:45","20:00","20:15","20:30","20:45","21:00","21:15","21:30","21:45","22:00",
     "22:15","22:30","22:45"]
 
-
+ 
     let {sitio} = useParams()
 
     let currentAdress;
@@ -33,6 +34,8 @@ export const ReservationFormPage = () => {
          const {name, value} = e.target
 
          setForm({...form, [name]:value})
+
+         console.log(date)
      }
    
 
@@ -42,7 +45,19 @@ export const ReservationFormPage = () => {
 
     console.log(date, time, personsNum, email)
 
-    
+    let getAfterCurrentTime = () => {
+      //si se reserva en el mismo día mostrar entre opciones de
+      //seleccion de hora superior al actual
+      let hour = new Date().getHours();
+      let minutes = new Date().getMinutes();
+      let currentTime = `${hour}:${minutes}`
+      console.log(reservationTime)
+     return   reservationTime.filter(time =>  time >= currentTime)
+        
+     }
+
+    console.log("current time arr", getAfterCurrentTime() )
+  
 
     const submitData = (e) => {
     
@@ -75,14 +90,14 @@ export const ReservationFormPage = () => {
     <label htmlFor="email">Su email:</label> 
     <input required type="email" id="email" className="form_control" placeholder="tu email"  name="email" value={email} onChange={inputOnChange} />
      <label htmlFor="date">Seleccione fecha:</label>
-     <input  required type="date" id="date" className="form_control"  min={`${new Date().getDate()}`} max="2023-12-31" name="date" value={date} onChange={inputOnChange}/>
+     <input  required type="date" id="date" className="form_control"  min={new Date().toISOString().slice(0,10)} max="2023-12-31" name="date" value={date} onChange={inputOnChange}/>
       <label htmlFor="quantity">Personas:</label>
       <select required className="form_control" id="quantity" name="personsNum" value={personsNum} onChange={inputOnChange} >
      { [...Array(10).keys()].map((index)=> <option value={index + 1} key={index} > {index + 1} Pax</option>)}
       </select>
       <label htmlFor="time">Seleccione la hora:</label>
        <select required className="form_control" placeholder="what time"   id="time" name="time" value={time} onChange={inputOnChange}>
-        {reservationTime.map((time, index) =>  <option key={index} value={time} >{time}</option>)}
+        {(date === new Date().toISOString().slice(0,10))?getAfterCurrentTime().map((time, index) =>  <option key={index} value={time} >{time}</option>):reservationTime.map((time, index) =>  <option key={index} value={time} >{time}</option>)}
        </select>
        <span className={(okSubmit === false)?"no_submit":"ok_submit"}>Gracias por su reserva!</span>
       </fieldset>
