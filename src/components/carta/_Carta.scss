@@ -6,6 +6,7 @@
 .food_container{
     margin: 20px;
     padding: 20px;
+    flex-basis: Calc(30% - 20px);
     // background-color:lightblue;
     img{
         width: 300px;
