@@ -33,9 +33,24 @@ export const ReservationFormPage = () => {
      const inputOnChange = (e) =>{
          const {name, value} = e.target
 
-         setForm({...form, [name]:value})
+         //miro que si es lunes no deje continuar con la selección
 
-         console.log(date)
+         let reservationDate = new Date(`${value}`).getDay()
+
+         if(reservationDate === 1){
+          alert("Lo sentimos, cerramos los lunes.")
+          setForm({...form, date: ""})
+          return;
+         }
+
+
+
+
+         setForm({...form, [name]:value})
+          
+        
+         
+        
      }
    
 
@@ -91,6 +106,7 @@ export const ReservationFormPage = () => {
     <input required type="email" id="email" className="form_control" placeholder="tu email"  name="email" value={email} onChange={inputOnChange} />
      <label htmlFor="date">Seleccione fecha:</label>
      <input  required type="date" id="date" className="form_control"  min={new Date().toISOString().slice(0,10)} max="2023-12-31" name="date" value={date} onChange={inputOnChange}/>
+    
       <label htmlFor="quantity">Personas:</label>
       <select required className="form_control" id="quantity" name="personsNum" value={personsNum} onChange={inputOnChange} >
      { [...Array(10).keys()].map((index)=> <option value={index + 1} key={index} > {index + 1} Pax</option>)}
