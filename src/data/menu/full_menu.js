@@ -1,29 +1,29 @@
 export const fullMenu = [
  {
         name: "Ensaladas",
-        img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938781/italian/ensalada_cherry_hoxpao.jpg"   
+        img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1685956357/italiano/ensalada_cherry_hoxpao_fkhcoj.jpg"   
 },
 {
     name: "Entrantes",
-    img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938731/italian/canapes_uaizvi.jpg"   
+    img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1685956356/italiano/canapes_uaizvi_mjeoje.jpg"   
         },
 
 {
 name: "Pastas",
-img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938854/italian/pasta_carbonara_sa4rvl.jpg"   
+img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1685956357/italiano/pasta_carbonara_sa4rvl_n8id1f.jpg"   
 },
 {
 name: "Pizzas",
-img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938861/italian/pizza_di_mare_praocd.jpg"   
+img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1685956358/italiano/pizza_di_mare_praocd_ixaae3.jpg"   
 },
     
 {
     name: "Postres",
-    img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938829/italian/helados_ah5jmb.jpg"  
+    img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1685956356/italiano/helados_ah5jmb_z9zdjh.jpg"  
    },
    { 
    name: "Bebidas",
-   img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1679938739/italian/cerveza_jqkqop.jpg"   
+   img: "https://res.cloudinary.com/dnkyf1ht8/image/upload/v1685956356/italiano/cerveza_jqkqop_sdwvyd.jpg"   
    },
 
 
